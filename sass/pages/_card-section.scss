@@ -8,6 +8,10 @@
 	}
 }
 
+.bold {
+	font-weight: $fw-bold;
+}
+
 .mobile-only {
 	line-height: remSize(25px);
 
