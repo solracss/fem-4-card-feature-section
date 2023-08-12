@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.container {
+	margin-inline: auto;
+	padding: 5rem 2rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: $fw-bold;
+}
