@@ -1,0 +1,15 @@
+@use './functions' as *;
+
+$ff-sans: 'Poppins', sans-serif;
+
+$ff-body: $ff-sans;
+
+$fs-300: remSize(13px);
+$fs-400: remSize(15px);
+$fs-500: remSize(20px);
+$fs-600: remSize(24px);
+$fs-700: remSize(36px);
+
+$fw-light: 200;
+$fw-normal: 400;
+$fw-bold: 600;

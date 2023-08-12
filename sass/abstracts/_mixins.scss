@@ -1,0 +1,8 @@
+@mixin setHslaColor($property, $hslcolor, $alpha: 1) {
+	#{$property}: hsla(
+		hue($hslcolor),
+		saturation($hslcolor),
+		lightness($hslcolor),
+		$alpha
+	);
+}
