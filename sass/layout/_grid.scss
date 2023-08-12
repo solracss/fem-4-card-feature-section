@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.grid[data-spacing="large"] {
+	gap: remSize(25px);
+}
