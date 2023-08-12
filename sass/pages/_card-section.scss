@@ -23,5 +23,13 @@
 }
 
 .card {
-	border: 1px solid gray;
+	box-shadow: $box-shadow-1;
+	border-radius: 8px;
+	border-top: 3px solid var(--item-color);
+
+	@for $i from 1 through 4 {
+		&[data-card-accent="#{$i}"] {
+			--item-color: var(--clr-accent-#{$i});
+		}
+	}
 }
