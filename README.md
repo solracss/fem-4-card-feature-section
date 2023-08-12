@@ -1,4 +1,4 @@
-# Frontend Mentor - [4 card feature section.]()
+# Frontend Mentor - [4 card feature section.](https://github.com/solracss/fem-4-card-feature-section)
 
 ## Table of contents
 
@@ -57,5 +57,33 @@ First time used `vite` for compiling sass and running site.
 
 	width: min(100% - $padding, $max-width);
 	margin-inline: auto;
+}
+```
+
+3. Use custom properties and scss loop for setting top border color for each card
+
+```html
+<div class="card" data-card-accent="1">
+	...
+	<div class="card" data-card-accent="2">
+		...
+		<div class="card" data-card-accent="3">
+			...
+			<div class="card" data-card-accent="4">..</div>
+		</div>
+	</div>
+</div>
+```
+
+```css
+.card {
+  ...
+	border-top: 3px solid var(--item-color);
+
+	@for $i from 1 through 4 {
+		&[data-card-accent="#{$i}"] {
+			--item-color: var(--clr-accent-#{$i});
+		}
+	}
 }
 ```
