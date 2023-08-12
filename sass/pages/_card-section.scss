@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.heading-main {
+	font-size: $fs-600;
+	font-weight: $fw-light;
+	& span {
+		display: block;
+	}
+}
+
+.mobile-only {
+	line-height: remSize(25px);
+
+	@include setHslaColor(color, $clr-neutral-400, 0.5);
+}
+
+.four-cards {
+	margin-top: remSize(76px);
+}
+
+.card {
+	border: 1px solid gray;
+}
