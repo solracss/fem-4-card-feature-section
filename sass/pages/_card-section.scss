@@ -24,13 +24,16 @@
 
 .card {
 	padding: remSize(28px);
-	border-top: 3px solid var(--item-color);
+	border-top: 3px solid;
 	box-shadow: $box-shadow-1;
 	border-radius: 8px;
 
-	@for $i from 1 through 4 {
+	@for $i from 1 through length($colors) {
+		$color-key: nth(map-keys($colors), $i);
+		$color-value: map-get($colors, $color-key);
+
 		&[data-card-accent="#{$i}"] {
-			--item-color: var(--clr-accent-#{$i});
+			border-color: $color-value;
 		}
 	}
 

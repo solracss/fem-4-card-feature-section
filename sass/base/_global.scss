@@ -1,12 +1,5 @@
 @use "../abstracts" as *;
 
-:root {
-	--clr-accent-1: #{$clr-accent-1};
-	--clr-accent-2: #{$clr-accent-2};
-	--clr-accent-3: #{$clr-accent-3};
-	--clr-accent-4: #{$clr-accent-4};
-}
-
 body {
 	padding: 5rem 0;
 	background-color: $clr-neutral-200;
