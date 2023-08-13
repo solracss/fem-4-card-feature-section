@@ -87,3 +87,46 @@ First time used `vite` for compiling sass and running site.
 	}
 }
 ```
+
+4. Refactor this loop to use only sass variables
+
+```scss
+$colors: (
+	clr-accent-1: hsl(180, 62%, 55%),
+	clr-accent-2: hsl(0, 78%, 62%),
+	clr-accent-3: hsl(34, 97%, 64%),
+	clr-accent-4: hsl(212, 86%, 64%),
+);
+
+.card {
+	border-top: 3px solid;
+
+	@for $i from 1 through length($colors) {
+		$color-key: nth(map-keys($colors), $i);
+		$color-value: map-get($colors, $color-key);
+
+		&[data-card-accent="#{$i}"] {
+			border-color: $color-value;
+		}
+	}
+}
+```
+
+5. Start using BEM methodology
+
+```scss
+.card {
+	...
+	&__heading {
+		...
+	}
+
+	&__description {
+		...
+	}
+
+	&__icon {
+		...
+	}
+}
+```
