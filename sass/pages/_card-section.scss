@@ -34,18 +34,18 @@
 		}
 	}
 
-	&-heading {
+	&__heading {
 		font-size: remSize(20px);
 		font-weight: $fw-bold;
 	}
 
-	&-description {
+	&__description {
 		font-size: remSize(13px);
 
 		@include setHslaColor(color, $clr-neutral-400, 0.5);
 	}
 
-	&-icon {
+	&__icon {
 		margin-top: remSize(33px);
 		margin-left: auto;
 		width: remSize(57px);
