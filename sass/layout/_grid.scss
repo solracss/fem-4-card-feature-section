@@ -3,6 +3,10 @@
 .grid {
 	display: grid;
 	gap: 1rem;
+
+	&--item-center {
+		justify-items: center;
+	}
 }
 
 .grid[data-spacing="large"] {

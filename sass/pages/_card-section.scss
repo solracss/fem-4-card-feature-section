@@ -13,6 +13,7 @@
 }
 
 .mobile-only {
+	max-width: remSize(350px);
 	line-height: remSize(25px);
 
 	@include setHslaColor(color, $clr-neutral-400, 0.5);
@@ -20,9 +21,11 @@
 
 .four-cards {
 	margin-top: remSize(76px);
+	grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
 }
 
 .card {
+	max-width: remSize(350px);
 	padding: remSize(28px);
 	border-top: 3px solid;
 	box-shadow: $box-shadow-1;
