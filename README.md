@@ -138,3 +138,23 @@ font-size: clamp(1.5rem, 1.1444rem + 1.5172vw, 2.1875rem);
 ```
 
 Used [calculator](https://clamp.font-size.app) to make my life easier.
+
+7. Use mixin for mediaquery along with predefined breakpoints as list
+
+```css
+$breakpoints: (
+	large: 68.75em,
+	xtra-large: 72.8125em,
+);
+
+@mixin media($size) {
+	@if map.has-key($breakpoints, $size) {
+		$breakpoint: map-get($breakpoints, $size);
+		@media screen and (min-width: $breakpoint) {
+			@content;
+		}
+	} @else {
+		@error 'the keyword #{$size} is not in the $breakpoints map';
+	}
+}
+```
