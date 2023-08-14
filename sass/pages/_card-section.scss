@@ -25,8 +25,7 @@
 	margin-inline: auto;
 	max-width: remSize(800px);
 	grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-
-	@media (min-width: 1165px) {
+	@include media(xtra-large) {
 		margin-top: remSize(64px);
 		max-width: remSize(1100px);
 		grid-template-columns: repeat(3, 1fr);
@@ -85,7 +84,7 @@
 		aspect-ratio: 1 / 1;
 	}
 
-	@media (min-width: 1100px) {
+	@include media(large) {
 		padding: remSize(28px) 2rem 2rem 2rem;
 
 		&__description {
