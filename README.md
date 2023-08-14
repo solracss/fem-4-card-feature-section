@@ -130,3 +130,11 @@ $colors: (
 	}
 }
 ```
+
+6. Use `clamp()` for making heading font size responsive
+
+```css
+font-size: clamp(1.5rem, 1.1444rem + 1.5172vw, 2.1875rem);
+```
+
+Used [calculator](https://clamp.font-size.app) to make my life easier.
