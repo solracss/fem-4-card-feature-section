@@ -3,6 +3,7 @@
 .heading-main {
 	font-size: $fs-600;
 	font-weight: $fw-light;
+	font-size: clamp(1.5rem, 1.1444rem + 1.5172vw, 2.1875rem);
 	& span {
 		display: block;
 	}
