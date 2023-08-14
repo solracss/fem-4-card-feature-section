@@ -21,6 +21,8 @@
 
 .four-cards {
 	margin-top: remSize(76px);
+	margin-inline: auto;
+	max-width: remSize(800px);
 	grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
 }
 
