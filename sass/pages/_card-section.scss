@@ -25,6 +25,29 @@
 	margin-inline: auto;
 	max-width: remSize(800px);
 	grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+
+	@media (min-width: 1165px) {
+		margin-top: remSize(64px);
+		max-width: remSize(1100px);
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+
+		.supervisor {
+			grid-area: 2 / 1 / 4 / 2;
+		}
+
+		.team {
+			grid-area: 1 / 2 / 3 / 3;
+		}
+
+		.karma {
+			grid-area: 3 / 2 / 5 / 3;
+		}
+
+		.calculator {
+			grid-area: 2 / 3 / 4 / 4;
+		}
+	}
 }
 
 .card {
