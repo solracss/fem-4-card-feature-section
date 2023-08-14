@@ -12,8 +12,8 @@
 	font-weight: $fw-bold;
 }
 
-.mobile-only {
-	max-width: remSize(350px);
+.heading-description {
+	max-width: remSize(540px);
 	line-height: remSize(25px);
 
 	@include setHslaColor(color, $clr-neutral-400, 0.5);
